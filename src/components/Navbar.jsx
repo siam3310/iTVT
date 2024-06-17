@@ -1,5 +1,5 @@
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link} from "@nextui-org/react";
 import {Logo} from "./Logo.jsx";
 
 export default function () {
@@ -13,6 +13,11 @@ export default function () {
 
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        <NavbarItem>
+          <Link color="foreground" href="/">
+            TV Calendar (soon)
+          </Link>
+        </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="/channel">
             Channels

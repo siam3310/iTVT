@@ -8,6 +8,7 @@ export default function(){
             <Channel url="/channel/itvt2" thumbnail="/static/img/itvt_thumbnail.png" description="iTVT 2"/>
             <Channel url="/channel/otv" thumbnail="/static/img/channel_thumbnail.png" description="oTV"/>
             <Channel url="/channel/oliwier_stream" thumbnail="/static/img/oliwierstream_thumbnail.png" description="Oliwier Stream"/>
+            <Channel url="/channel/oliwier_stream_local" thumbnail="/static/img/oliwierstream_thumbnail.png" description="Oliwier Stream (local)"/>
         </div>
     )
 }
