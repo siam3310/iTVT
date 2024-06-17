@@ -48,7 +48,7 @@ const App = ({ initialHasVisited }) => {
       <div className="App">
         {showPopup && <Popup onClose={handleClosePopup} />}
         <Navbar />
-        <VideoBox name="iTVT - Watch Broadcast" src="http://video-itv.itvt.xyz/live/itvt/index.m3u8"/>
+        <VideoBox name="iTVT - Watch Broadcast" src="https://video-itv.itvt.xyz/live/itvt/index.m3u8"/>
         <Channels/>
       </div>
     </NextUIProvider>
