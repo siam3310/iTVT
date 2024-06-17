@@ -1,19 +1,12 @@
 import React from 'react';
-import {NextUIProvider} from "@nextui-org/react";
-import Navbar from '../components/Navbar';
-import VideoBox from '../components/VideoBox';
-import Channels from '../components/Channels';
+import App from '../components/App';
+import { cookies } from 'next/headers';
 
-const App = () => {
-  return (
-    <NextUIProvider>
-      <div className="App">
-        <Navbar />
-        <VideoBox name="iTVT - Watch Broadcast" src="https://video-itv.itvt.xyz/live/itvt/index.m3u8"/>
-        <Channels/>
-      </div>
-    </NextUIProvider>
-  );
+const Page = () => {
+  const cookieStore = cookies();
+  const hasVisited = cookieStore.has('hasVisited');
+
+  return <App initialHasVisited={hasVisited} />;
 };
 
-export default App;
+export default Page;
