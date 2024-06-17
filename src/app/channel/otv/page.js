@@ -9,7 +9,7 @@ const App = () => {
     <NextUIProvider>
       <div className="App">
         <Navbar />
-        <VideoBox name="oTVT - Other TV (Unavailable)" src="http://video-itv.itvt.xyz/live/otv/index.m3u8"/>
+        <VideoBox name="oTVT - Other TV (Unavailable)" src="https://video-itv.itvt.xyz/live/otv/index.m3u8"/>
         <Channels/>
       </div>
     </NextUIProvider>
