@@ -4,7 +4,7 @@ import {Logo} from "./Logo.jsx";
 
 export default function () {
   return (
-    <Navbar className="m-4 bg-zinc-800 rounded-md">
+    <Navbar className="m-4 bg-zinc-800 rounded-md w-vw-header">
       <NavbarBrand>
         <Link color="foreground" href="/">
           <Logo />
