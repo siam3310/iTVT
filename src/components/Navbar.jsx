@@ -26,8 +26,13 @@ export default function () {
           </Link>
         </NavbarItem>
         <NavbarItem >
-          <Link color="foreground" href="/privacy" aria-current="page">
+          <Link color="foreground" href="/privacy">
             <Image src="/static/icons/info.svg" width={30}></Image>
+          </Link>
+        </NavbarItem>
+        <NavbarItem >
+          <Link color="foreground" href="/contact" aria-current="page">
+            <Image src="/static/icons/email.svg" width={30}></Image>
           </Link>
         </NavbarItem>
       </NavbarContent>
