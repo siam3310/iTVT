@@ -7,7 +7,7 @@ export default function NotFound() {
     <NextUIProvider>
         <div className="App">
             <Navbar />
-            <h2 className='text-center text-xl mt-10'>The selected page does not exist, select an available option from the menu at the top of the page</h2>
+            <h2 className='text-center text-xl mt-10 mx-5 sm:mx-4 lg:mx-0'>The selected page does not exist, select an available option from the menu at the top of the page</h2>
         </div>
     </NextUIProvider>
   )
