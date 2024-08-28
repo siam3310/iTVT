@@ -12,6 +12,7 @@ export default function () {
         </Link>
 
       </NavbarBrand>
+      
       {/* Mobile Layout */}
       <NavbarContent className="flex sm:hidden gap-4 relative top-[2.5px]" justify="center">
         <NavbarItem>
@@ -30,6 +31,7 @@ export default function () {
           </Link>
         </NavbarItem>
       </NavbarContent>
+
       {/* Desktop Layout */}
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
