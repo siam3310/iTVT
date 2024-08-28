@@ -1,5 +1,5 @@
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Image} from "@nextui-org/react";
 import {Logo} from "./Logo.jsx";
 
 export default function () {
@@ -12,19 +12,38 @@ export default function () {
         </Link>
 
       </NavbarBrand>
+      {/* Mobile Layout */}
+      <NavbarContent className="flex sm:hidden gap-4 relative top-[2.5px]" justify="center">
+        <NavbarItem>
+          <Link color="foreground" href="/">
+            <Image src="/static/icons/calendar.svg" width={30}></Image>
+          </Link>
+        </NavbarItem>
+        <NavbarItem isActive>
+          <Link href="/channel">
+            <Image src="/static/icons/channels.svg" width={30}></Image>
+          </Link>
+        </NavbarItem>
+        <NavbarItem >
+          <Link color="foreground" href="/privacy" aria-current="page">
+          <Image src="/static/icons/info.svg" width={30}></Image>
+          </Link>
+        </NavbarItem>
+      </NavbarContent>
+      {/* Desktop Layout */}
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="/">
             TV Calendar (soon)
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem isActive>
           <Link color="foreground" href="/channel">
             Channels
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="/privacy" aria-current="page">
+        <NavbarItem>
+          <Link color="foreground" href="/privacy" aria-current="page">
             Privacy Policy
           </Link>
         </NavbarItem>
