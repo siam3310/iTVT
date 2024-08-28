@@ -37,11 +37,7 @@ const VideoPlayer = forwardRef((props, ref) => {
                 setMinTime(player.liveTracker.lastSeekEnd_)
                 setDuration(player.liveTracker.lastTime_)
             }
-
-
-            // console.log(formatTime(player.liveTracker.lastTime))
-            // console.log(player.liveTracker.pastSeekEnd());
-            // console.log(player.liveTracker.lastTime)
+            
             console.log("Video player is ready.");
 
             const timeUpdateHandler = () => {
@@ -51,7 +47,6 @@ const VideoPlayer = forwardRef((props, ref) => {
 
 
             player.on('timeupdate', timeUpdateHandler);
-            // player.on('play', playHandler);
 
             return () => {
                 player.off('timeupdate', timeUpdateHandler);
@@ -212,10 +207,10 @@ const VideoPlayer = forwardRef((props, ref) => {
               <Video controls />
               <div id="controls" style={{ display: 'none' }}>
                 <div className="left-controls">
-                    <Image onClick={handleReplay} className="video-replay" src="/static/icons/ic_backward.png" width={30} height={30} alt="backward_10sec" />
-                    <Image onClick={handlePlayToggle} className="video-play" src={isPlaying ? "/static/icons/ic_pause.png" : "/static/icons/ic_play.png"} width={30} height={30} alt="play_pause" />
-                    <Image onClick={handleForward} className="video-forward" src="/static/icons/ic_forward.png" width={30} height={30} alt="forward_10sec" />
-                    <Image onClick={handleSeekToLive} className="video-live" style={{display: 'none'}} src="/static/icons/ic_live.png" width={30} height={30} alt="live" />
+                    <Image onClick={handleReplay} className="video-replay" src="/static/icons/player/ic_backward.png" width={30} height={30} alt="backward_10sec" />
+                    <Image onClick={handlePlayToggle} className="video-play" src={isPlaying ? "/static/icons/player/ic_pause.png" : "/static/icons/player/ic_play.png"} width={30} height={30} alt="play_pause" />
+                    <Image onClick={handleForward} className="video-forward" src="/static/icons/player/ic_forward.png" width={30} height={30} alt="forward_10sec" />
+                    <Image onClick={handleSeekToLive} className="video-live" style={{display: 'none'}} src="/static/icons/player/ic_live.png" width={30} height={30} alt="live" />
                 </div>
                 <div className="progress-container">
                     <div className="time-display">
@@ -223,9 +218,6 @@ const VideoPlayer = forwardRef((props, ref) => {
                     </div>
                     <input
                     type="range"
-                    // min={minTime}
-                    // max={duration}
-                    // value={minTime}
                     step={1}
                     className="progress-bar"
                     style={{ width: "95%" }}
@@ -233,7 +225,7 @@ const VideoPlayer = forwardRef((props, ref) => {
                     />
                 </div>
                 <div className="right-controls">
-                    <Image onClick={handleFullscreenToggle} className="video-fs" src="/static/icons/ic_fs.png" width={30} height={30} alt="fullscreen" />
+                    <Image onClick={handleFullscreenToggle} className="video-fs" src="/static/icons/player/ic_fs.png" width={30} height={30} alt="fullscreen" />
                 </div>
               </div>
             </>
