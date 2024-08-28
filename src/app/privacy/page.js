@@ -9,7 +9,7 @@ const App = () => {
         <Navbar />
         <div className="text-center max-w-[1000px] mx-5 sm:mx-4 lg:mx-auto">
             <h2 className="font-bold text-2xl text-center my-7">Kim jesteśmy</h2>
-            <p>Adres naszej strony internetowej to: http://hub.itvt.pl</p>
+            <p>Adres naszej strony internetowej to: http://hub.itvt.xyz</p>
             <h2 className="font-bold text-2xl text-center my-7">Media</h2>
             <p>Podczas odtwarzania filmu, na twój komputer mogą być pobierane i wysyłane dodatkowe dane</p>
             <h2 className="font-bold text-2xl text-center my-7">Ciasteczka</h2>
