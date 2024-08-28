@@ -40,6 +40,10 @@ a {
   @apply cursor-pointer;
 }
 
+.App{
+  margin-bottom: 45px;
+}
+
 .video-controls{
   width: 100%;
   display: flex;

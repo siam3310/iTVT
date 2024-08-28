@@ -25,7 +25,7 @@ const App = () => {
 
     return (
         <NextUIProvider>
-            <div className="App mb-20">
+            <div className="App">
                 <Navbar />
                 <h2 className="text-center font-bold text-3xl">Today</h2>
                 <AccordionBox programs={programsToday}/>
