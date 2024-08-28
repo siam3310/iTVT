@@ -12,11 +12,11 @@ export default function () {
         </Link>
 
       </NavbarBrand>
-      
+
       {/* Mobile Layout */}
       <NavbarContent className="flex sm:hidden gap-4 relative top-[2.5px]" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="/">
+          <Link color="foreground" href="/calendar">
             <Image src="/static/icons/calendar.svg" width={30}></Image>
           </Link>
         </NavbarItem>
@@ -35,8 +35,8 @@ export default function () {
       {/* Desktop Layout */}
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="/">
-            TV Calendar (soon)
+          <Link color="foreground" href="/calendar">
+            TV Calendar
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
