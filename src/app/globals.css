@@ -53,12 +53,17 @@ a {
 }
 
 .video-controls .left-controls{
+  margin-left: 2px;
   display: flex;
 }
 
 .video-controls .left-controls img{
   margin-left: 2px;
   margin-right: 2px;
+}
+
+.video-controls .right-controls {
+  margin-right: 5px;
 }
 
 .video-controls .right-controls img{
