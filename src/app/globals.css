@@ -104,6 +104,12 @@ a {
   display: block !important;
 }
 
+@media only screen and (max-height: 500px) and (max-width: 1000px) {
+  .video-js .vjs-control-bar{
+    height: 45px !important;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

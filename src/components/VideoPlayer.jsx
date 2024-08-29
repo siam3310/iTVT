@@ -132,6 +132,7 @@ const VideoPlayer = forwardRef((props, ref) => {
             targetElement.querySelectorAll('.video-replay').forEach(el => {
                 el.removeEventListener('click', handleReplay);
                 el.addEventListener('click', handleReplay);
+                el.addEventListener('touchstart', handleReplay);
             });
     
             targetElement.querySelectorAll('.video-play').forEach(el => {
@@ -141,16 +142,19 @@ const VideoPlayer = forwardRef((props, ref) => {
                 el.addEventListener('click', function(){
                     handlePlayToggle(el);
                 });
+                el.addEventListener('touchstart', handlePlayToggle);
             });
     
             targetElement.querySelectorAll('.video-forward').forEach(el => {
                 el.removeEventListener('click', handleForward);
                 el.addEventListener('click', handleForward);
+                el.addEventListener('touchstart', handleForward);
             });
     
             targetElement.querySelectorAll('.video-live').forEach(el => {
                 el.removeEventListener('click', handleSeekToLive);
                 el.addEventListener('click', handleSeekToLive);
+                el.addEventListener('touchstart', handleSeekToLive);
             });
     
             targetElement.querySelectorAll('.video-fs').forEach(el => {
@@ -219,10 +223,10 @@ const VideoPlayer = forwardRef((props, ref) => {
               <Video controls />
               <div id="controls" style={{ display: 'none' }}>
                 <div className="left-controls">
-                    <Image onClick={handleReplay} className="video-replay" src="/static/icons/player/ic_backward.png" width={30} height={30} alt="backward_10sec" />
-                    <Image onClick={handlePlayToggle} className="video-play" src={isPlaying ? "/static/icons/player/ic_pause.png" : "/static/icons/player/ic_play.png"} width={30} height={30} alt="play_pause" />
-                    <Image onClick={handleForward} className="video-forward" src="/static/icons/player/ic_forward.png" width={30} height={30} alt="forward_10sec" />
-                    <Image onClick={handleSeekToLive} className="video-live" style={{display: 'none'}} src="/static/icons/player/ic_live.png" width={30} height={30} alt="live" />
+                    <Image onClick={handleReplay}  onTouchStart={handleReplay} className="video-replay" src="/static/icons/player/ic_backward.png" width={30} height={30} alt="backward_10sec" />
+                    <Image onClick={handlePlayToggle}  onTouchStart={handlePlayToggle} className="video-play" src={isPlaying ? "/static/icons/player/ic_pause.png" : "/static/icons/player/ic_play.png"} width={30} height={30} alt="play_pause" />
+                    <Image onClick={handleForward}  onTouchStart={handleForward} className="video-forward" src="/static/icons/player/ic_forward.png" width={30} height={30} alt="forward_10sec" />
+                    <Image onClick={handleSeekToLive}  onTouchStart={handleSeekToLive} className="video-live" style={{display: 'none'}} src="/static/icons/player/ic_live.png" width={30} height={30} alt="live" />
                 </div>
                 <div className="progress-container">
                     <div className="time-display">
