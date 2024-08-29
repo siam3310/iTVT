@@ -15,28 +15,6 @@ const App = ({ initialHasVisited }) => {
       setShowPopup(true);
       document.cookie = "hasVisited=true; max-age=" + 7 * 24 * 60 * 60;
     }
-    const saveIpAddress = async () => {
-        try {
-          const response = await fetch('/api/saveip', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ someOtherData: 'example' }),
-          });
-  
-          if (!response.ok) {
-            throw new Error('Failed to save IP address');
-          }
-  
-          const data = await response.json();
-          console.log(data.message);
-        } catch (error) {
-          console.error('Error:', error);
-        }
-      };
-  
-      saveIpAddress();
   }, [initialHasVisited]);
 
   const handleClosePopup = () => {
