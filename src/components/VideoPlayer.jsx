@@ -16,10 +16,13 @@ const VideoPlayer = forwardRef((props, ref) => {
     const className = "tv-player video-js vjs-default-skin vjs-16-9 vjs-big-play-centered";
     
     const { Video, player } = useVideoJS(
-        { sources: [{ src: props.src, type: 'application/x-mpegURL' }] },
+        {
+          sources: [{ src: props.src, type: 'application/x-mpegURL' }],
+
+        },
         className,
         { controls: true }
-    );
+      );
 
     useEffect(() => {
         if (player && player.isReady_) {
@@ -42,8 +45,10 @@ const VideoPlayer = forwardRef((props, ref) => {
                 updateProgress()
             };
 
-            player.on('timeupdate', timeUpdateHandler);
-
+            player.on('timeupdate', timeUpdateHandler); 
+            player.on('error', () => {
+                setIsVideoLoaded(false);
+            });
             return () => {
                 player.off('timeupdate', timeUpdateHandler);
             };
@@ -243,7 +248,11 @@ const VideoPlayer = forwardRef((props, ref) => {
                 </div>
               </div>
             </>
-          ) : null}
+          ) : 
+            <>
+              <Image src="/static/img/stream_offline.png" className="stop-drag" width={1280} height={720} alt="Stream Offline"/>
+            </>
+          }
         </div>
     );
 });
