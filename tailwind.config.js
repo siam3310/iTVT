@@ -11,6 +11,9 @@ module.exports = {
       width: {
         'vw-header': 'calc(100% - 30px)',
       },
+      screens: {
+        'bigger': '3000px',
+      },
     },
   },
   darkMode: "class",
