@@ -54,17 +54,18 @@ const VideoPlayer = forwardRef((props, ref) => {
         }
     }, [player, isMovedControls]);
 
-    const handlePlayToggle = () => {
+    const handlePlayToggle = (ref) => {
         if (player) {
             if (player.paused()) {
                 player.play().catch(error => {
                     console.error('Error attempting to play the video:', error);
                     setIsVideoLoaded(false);
                 });
+                ref.src = "/static/icons/player/ic_pause.png";
                 setIsPlaying(true);
             } else {
                 player.pause();
-                setIsPlaying(false);
+                ref.src = "/static/icons/player/ic_play.png";
             }
         }
     };
@@ -101,12 +102,18 @@ const VideoPlayer = forwardRef((props, ref) => {
                     } else if (videoElement.webkitRequestFullscreen) {
                         videoElement.webkitRequestFullscreen();
                     }
+                    if (screen.orientation && screen.orientation.lock) {
+                        screen.orientation.lock('landscape');
+                    }
                     setIsFullscreen(true);
                 } else {
                     if (document.exitFullscreen) {
                         document.exitFullscreen();
                     } else if (document.webkitExitFullscreen) {
                         document.webkitExitFullscreen();
+                    }
+                    if (screen.orientation && screen.orientation.lock) {
+                        screen.orientation.lock('portrait-primary');
                     }
                     setIsFullscreen(false);
                 }
@@ -129,7 +136,11 @@ const VideoPlayer = forwardRef((props, ref) => {
     
             targetElement.querySelectorAll('.video-play').forEach(el => {
                 el.removeEventListener('click', handlePlayToggle);
-                el.addEventListener('click', handlePlayToggle);
+                el.srcset = "";
+                el.src = "/static/icons/player/ic_pause.png";
+                el.addEventListener('click', function(){
+                    handlePlayToggle(el);
+                });
             });
     
             targetElement.querySelectorAll('.video-forward').forEach(el => {
@@ -145,6 +156,7 @@ const VideoPlayer = forwardRef((props, ref) => {
             targetElement.querySelectorAll('.video-fs').forEach(el => {
                 el.removeEventListener('click', handleFullscreenToggle);
                 el.addEventListener('click', handleFullscreenToggle);
+                el.addEventListener('touchstart', handleFullscreenToggle);
             });
 
             targetElement.querySelectorAll('.progress-bar').forEach(el => {
@@ -225,7 +237,7 @@ const VideoPlayer = forwardRef((props, ref) => {
                     />
                 </div>
                 <div className="right-controls">
-                    <Image onClick={handleFullscreenToggle} className="video-fs" src="/static/icons/player/ic_fs.png" width={30} height={30} alt="fullscreen" />
+                    <Image onClick={handleFullscreenToggle} onTouchStart={handleFullscreenToggle} className="video-fs" src="/static/icons/player/ic_fs.png" width={30} height={30} alt="fullscreen" />
                 </div>
               </div>
             </>
