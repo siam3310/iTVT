@@ -13,9 +13,7 @@ const VideoPlayer = forwardRef((props, ref) => {
     const [isMovedControls, setIsMovedControls] = useState(false);
     const [minTime, setMinTime] = useState(0);
     const [duration, setDuration] = useState(0);
-    const [current, setCurrent] = useState(0);
     const className = "tv-player video-js vjs-default-skin vjs-16-9 vjs-big-play-centered";
-    const widthSize = props.width || "100%";
     
     const { Video, player } = useVideoJS(
         { sources: [{ src: props.src, type: 'application/x-mpegURL' }] },
@@ -43,8 +41,6 @@ const VideoPlayer = forwardRef((props, ref) => {
             const timeUpdateHandler = () => {
                 updateProgress()
             };
-
-
 
             player.on('timeupdate', timeUpdateHandler);
 
@@ -142,7 +138,9 @@ const VideoPlayer = forwardRef((props, ref) => {
                 el.addEventListener('click', function(){
                     handlePlayToggle(el);
                 });
-                el.addEventListener('touchstart', handlePlayToggle);
+                el.addEventListener('touchstart', function(){
+                    handlePlayToggle(el);
+                });
             });
     
             targetElement.querySelectorAll('.video-forward').forEach(el => {
