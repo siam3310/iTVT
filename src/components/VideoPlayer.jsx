@@ -220,7 +220,7 @@ const VideoPlayer = forwardRef((props, ref) => {
     }, [player]);
 
     return (
-        <div id="video-player" className='max-md:w-full max-lg:w-[80vw] w-[51.5vw] flex justify-center'>
+        <div id="video-player" className='max-md:w-full max-lg:w-[80vw] w-[51.5vw]'>
           {isVideoLoaded ? (
             <>
               <Video controls />
