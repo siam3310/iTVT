@@ -28,6 +28,10 @@
   @apply py-4 px-5;
 }
 
+.no-clickable{
+  pointer-events: none;
+}
+
 .stop-drag{
   user-drag: none;
   -webkit-user-drag: none;
@@ -42,6 +46,7 @@ html,
 body {
   height: 100vh;
   max-width: 100vw;
+  background-color: black;
   overflow-x: hidden;
 }
 
