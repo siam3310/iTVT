@@ -53,6 +53,10 @@ a {
   margin-bottom: 45px;
 }
 
+.video-js{
+  border-radius: 8px;
+}
+
 .video-controls{
   width: 100%;
   display: flex;

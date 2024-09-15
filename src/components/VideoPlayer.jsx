@@ -220,7 +220,7 @@ const VideoPlayer = forwardRef((props, ref) => {
     }, [player]);
 
     return (
-        <div id="video-player" className='max-md:w-full max-lg:w-[80vw] w-[51.5vw]'>
+        <div id="video-player" className='max-md:w-full max-lg:w-[80vw] w-[51.5vw] rounded-lg'>
           {isVideoLoaded ? (
             <>
               <Video controls />
@@ -250,7 +250,7 @@ const VideoPlayer = forwardRef((props, ref) => {
             </>
           ) : 
             <>
-              <Image src="/static/img/stream_offline.png" className="stop-drag" width={1280} height={720} alt="Stream Offline"/>
+              <Image src="/static/img/stream_offline.png" className="stop-drag rounded-lg" width={1280} height={720} alt="Stream Offline"/>
             </>
           }
         </div>
