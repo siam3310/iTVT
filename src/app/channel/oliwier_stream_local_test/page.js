@@ -18,7 +18,7 @@ const App = () => {
       <FirstLoadPopup />
       <div className="App no-clickable stop-drag" ref={appRef}>
         <Navbar />
-        <VideoBox name="Oliwier Stream 24/7" src="http://83.22.152.168:8080/hls/teststrona/index.m3u8"/>
+        <VideoBox name="Oliwier Stream (test) 24/7" src="http://83.22.152.168:8080/hls/teststrona/index.m3u8"/>
         <Channels/>
       </div>
     </NextUIProvider>
