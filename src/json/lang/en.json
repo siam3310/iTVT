@@ -1,0 +1,61 @@
+{
+  "navbar": {
+    "tv_calendar": "TV Calendar",
+    "channels": "Channels",
+    "privacy_policy": "Privacy Policy",
+    "contact": "Contact"
+  },
+  "pages": {
+    "404": "The selected page does not exist, select an available option from the menu at the top of the page",
+    "channel": "Select Favourite Channel",
+    "player": {
+      "watch_broadcast": "Watch Broadcast",
+      "unavailable": "Unavailable"
+    },
+    "tv_calendar": {
+      "today": "Today",
+      "tomorrow": "Tomorrow"
+    },
+    "privacy_policy": {
+      "about_us": {
+        "title": "About Us",
+        "content": "Our website is:"
+      },
+      "media": {
+        "title": "Media",
+        "content": "When playing a video, additional data may be downloaded to your computer and sent to other servers"
+      },
+      "cookies": {
+        "title": "Cookies",
+        "content": "The browser may use cookies, to properly display the video"
+      },
+      "embedded_data": {
+        "title": "Embedded content from other sites",
+        "content": {
+          "part1": "Elements on a page can contain embedded content (e.g. videos, images, articles, etc.). Embedded content from other sites behaves similar to how a user would visit a specific site directly.",
+          "part2": "Sites may collect information about you, use cookies, attach additional third-party tracking systems, and monitor your interactions with embedded material, including tracking your interactions with embedded material if you have an account and are logged into that site."
+        }
+      },
+      "keep_your_data": {
+        "title": "How long we keep your data ?",
+        "content": {
+          "part1": "If you leave a comment or write an email message, the content and metadata will be stored indefinitely. This allows us to easily respond to your message.",
+          "part2": "If a user, has registered on our website (if any), we also store the personal information entered in the profile. Any user can review, correct, or delete his or her personal information at any time (except for the username, which cannot be changed). Site administrators can also view and modify this information."
+        }
+      },
+      "rights_your_data": {
+        "title": "What rights do you have to your data ?",
+        "content": "If you have a user account or have sent a message through a form or email, you may request a file with an exported set of your personal information in our possession, including all of that provided by you. You may also request that we delete all of your personal data in our possession. This does not apply to any data that we are obliged to retain for administrative, legal or security reasons."
+      },
+      "send_your_data": {
+        "title": "Where we will send your data ?",
+        "content": "Your information such as IP Address, or System and Browser Version, may be sent to the site administrator for optimization and stability in the functioning of the site."
+      }
+    },
+    "contact": {
+      "contact_us": "Contact us",
+      "editors": "Editorial office",
+      "ads": "Ads"
+    }
+  }
+}

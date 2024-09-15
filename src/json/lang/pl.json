@@ -1,0 +1,61 @@
+{
+  "navbar": {
+    "tv_calendar": "Program TV",
+    "channels": "Kanały",
+    "privacy_policy": "Polityka Prywatności",
+    "contact": "Kontakt"
+  },
+  "pages": {
+    "404": "Wybrana strona nie istnieje. Wybierz dostępną opcję z Menu na górze strony",
+    "channel": "Wybierz ulubiony kanał",
+    "player": {
+      "watch_broadcast": "Oglądaj transmisje",
+      "unavailable": "Niedostępne"
+    },
+    "tv_calendar": {
+      "today": "Dzisiaj",
+      "tomorrow": "Jutro"
+    },
+    "privacy_policy": {
+      "about_us": {
+        "title": "Kim jesteśmy",
+        "content": "Nasza strona internetowa:"
+      },
+      "media": {
+        "title": "Media",
+        "content": "Podczas odtwarzania filmu, na twój komputer mogą być pobierane i wysyłane dodatkowe dane do innych serwerów"
+      },
+      "cookies": {
+        "title": "Ciasteczka",
+        "content": "Przeglądarka może wykorzystywać pliki Cookie, do prawidłowego wyświetlania filmu"
+      },
+      "embedded_data": {
+        "title": "Treści osadzone z innych stron",
+        "content": {
+          "part1": "Elementy na stronie mogą zawierać osadzone treści (np. filmy, obrazki, artykuły itp.). Osadzone treści z innych witryn zachowują się analogicznie do tego, jakby użytkownik odwiedził bezpośrednio konkretną witrynę.",
+          "part2": "Witryny mogą zbierać informacje o tobie, używać ciasteczek, dołączać dodatkowe, zewnętrzne systemy śledzenia i monitorować twoje interakcje z osadzonym materiałem, włączając w to śledzenie twoich interakcji z osadzonym materiałem jeśli posiadasz konto i jesteś zalogowany w tamtej witrynie."
+        }
+      },
+      "keep_your_data": {
+        "title": "Jak długo przechowujemy twoje dane ?",
+        "content": {
+          "part1": "Jeśli zostawisz komentarz lub napiszesz wiadomość email, treść i metadane będą przechowywane przez czas nieokreślony, aby łatwiej było nam odpowiedzieć na twoją wiadomość.",
+          "part2": "W przypadku, gdy użytkownik, zarejestrował się na naszej stronie internetowej (jeśli taki jest), przechowujemy również informacje osobiste wprowadzone w profilu. Każdy użytkownik może dokonać wglądu, korekty albo skasować swoje informacje osobiste w dowolnej chwili (nie licząc nazwy użytkownika, której nie można zmienić). Administratorzy strony również mogą przeglądać i modyfikować te informacje."
+        }
+      },
+      "rights_your_data": {
+        "title": "Jakie masz prawa do swoich danych ?",
+        "content": "Jeśli masz konto użytkownika albo wysłałeś wiadomość poprzez formularz czy email, możesz zażądać dostarczenia pliku z wyeksportowanym kompletem twoich danych osobistych będących w naszym posiadaniu, w tym całość tych dostarczonych przez ciebie. Możesz również zażądać usunięcia przez nas całości twoich danych osobistych w naszym posiadaniu. Nie dotyczy to żadnych danych które jesteśmy zobligowani zachować ze względów administracyjnych, prawnych albo bezpieczeństwa."
+      },
+      "send_your_data": {
+        "title": "Gdzie wysłamy twoje dane ?",
+        "content": "Twoje informacje takie jak Adres IP, czy Wersja Systemu oraz przeglądarki, mogą zostać wysłane do administratora strony w celu optymalizacji i stabilności w działaniu strony."
+      }
+    },
+    "contact": {
+      "contact_us": "Skontaktuj się",
+      "editors": "Redakcja",
+      "ads": "Reklamy"
+    }
+  }
+}
