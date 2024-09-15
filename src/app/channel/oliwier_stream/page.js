@@ -15,6 +15,7 @@ const App = () => {
 
   return (
     <NextUIProvider>
+      <FirstLoadPopup />
       <div className="App no-clickable stop-drag" ref={appRef}>
         <Navbar />
         <VideoBox name="Oliwier Stream 24/7" src="https://video-itv.itvt.xyz/live/oliwier_stream/index.m3u8"/>

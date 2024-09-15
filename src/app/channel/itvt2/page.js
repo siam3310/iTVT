@@ -15,6 +15,7 @@ const App = () => {
 
   return (
     <NextUIProvider>
+      <FirstLoadPopup />
       <div className="App no-clickable stop-drag" ref={appRef}>
         <Navbar />
         <VideoBox name="iTVT Now (Unavalaible)" src="https://video-itv.itvt.xyz/live/itvt2.m3u8"/>
