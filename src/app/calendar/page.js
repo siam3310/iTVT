@@ -6,6 +6,10 @@ import Navbar from '@/components/Navbar';
 import AccordionBox from '@/components/AccordionBox';
 
 const App = () => {
+    const programsDemoBroadcast = [
+        { title: "23:50 - 10:30 | Oliwier Stream - Live Urodzinowy", description: "Save from latest broadcast" },
+        { title: "10:30 - 19:00 | Oliwier Stream - Live Urodzinowy", description: "Save from latest broadcast" },
+    ];
     const programsToday = [
         { title: "10:00 - 10:30 | Program Name 1", description: "Description program" },
         { title: "10:30 - 12:00 | Program Name 2", description: "Description program" },
@@ -27,6 +31,8 @@ const App = () => {
         <NextUIProvider>
             <div className="App">
                 <Navbar />
+                <h2 className="text-center font-bold text-3xl">Demo Broadcast</h2>
+                <AccordionBox programs={programsDemoBroadcast}/>
                 <h2 className="text-center font-bold text-3xl">Today</h2>
                 <AccordionBox programs={programsToday}/>
                 <h2 className="text-center font-bold text-3xl mt-5">Tomorrow</h2>
