@@ -39,9 +39,9 @@ const App = () => {
         <NextUIProvider>
             <div className="App">
                 <Navbar />
-                <h2 className="text-center font-bold text-3xl">{calendarText.demo_broadcast}</h2>
+                <h2 className="text-center font-bold text-3xl mt-2">{calendarText.demo_broadcast}</h2>
                 <AccordionBox programs={programsDemoBroadcast}/>
-                <h2 className="text-center font-bold text-3xl">{calendarText.today}</h2>
+                <h2 className="text-center font-bold text-3xl mt-5">{calendarText.today}</h2>
                 <AccordionBox programs={programsToday}/>
                 <h2 className="text-center font-bold text-3xl mt-5">{calendarText.tomorrow}</h2>
                 <AccordionBox programs={programsTomorrow}/>
