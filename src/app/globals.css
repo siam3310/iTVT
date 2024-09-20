@@ -32,6 +32,16 @@
   pointer-events: none;
 }
 
+.select{
+  pointer-events: visible;
+  user-drag: text;
+  -webkit-user-drag: text;
+  user-select:text;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+}
+
 .stop-drag{
   user-drag: none;
   -webkit-user-drag: none;

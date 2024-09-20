@@ -2,6 +2,7 @@
   "navbar": {
     "tv_calendar": "TV Calendar",
     "channels": "Channels",
+    "watch": "Watch Everywhere",
     "privacy_policy": "Privacy Policy",
     "contact": "Contact"
   },
@@ -17,6 +18,13 @@
       "today": "Today",
       "tomorrow": "Tomorrow",
       "demo_broadcast": "Demo Broadcast"
+    },
+    "watch":{
+      "how_to_watch": "How to watch from another location/app",
+      "playlist_m3u": "Playlist m3u",
+      "use_link": "Use link",
+      "also_download": "also download file below",
+      "download": "Download"
     },
     "privacy_policy": {
       "about_us": {

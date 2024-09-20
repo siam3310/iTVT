@@ -24,7 +24,7 @@ function NavbarBlock () {
       </NavbarBrand>
 
       {/* Mobile Layout */}
-      <NavbarContent className="flex sm:hidden gap-4 relative top-[2.5px]" justify="center">
+      <NavbarContent className="flex mobile:hidden gap-4 relative top-[2.5px]" justify="center">
         <NavbarItem>
           <Link color="foreground" href="/calendar">
             <Image src="/static/icons/calendar.svg" width={30}></Image>
@@ -33,6 +33,11 @@ function NavbarBlock () {
         <NavbarItem isActive>
           <Link href="/channel">
             <Image src="/static/icons/channels.svg" width={30}></Image>
+          </Link>
+        </NavbarItem>
+        <NavbarItem >
+          <Link color="foreground" href="/watch">
+            <Image src="/static/icons/download.svg" width={30}></Image>
           </Link>
         </NavbarItem>
         <NavbarItem >
@@ -48,7 +53,7 @@ function NavbarBlock () {
       </NavbarContent>
 
       {/* Desktop Layout */}
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden mobile:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="/calendar">
             {headerText.tv_calendar}
@@ -57,6 +62,11 @@ function NavbarBlock () {
         <NavbarItem isActive>
           <Link color="foreground" href="/channel">
             {headerText.channels}
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="/watch">
+            {headerText.watch}
           </Link>
         </NavbarItem>
         <NavbarItem>

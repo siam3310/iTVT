@@ -2,6 +2,7 @@
   "navbar": {
     "tv_calendar": "Program TV",
     "channels": "Kanały",
+    "watch": "Oglądaj Wszędzie",
     "privacy_policy": "Polityka Prywatności",
     "contact": "Kontakt"
   },
@@ -17,6 +18,13 @@
       "today": "Dzisiaj",
       "tomorrow": "Jutro",
       "demo_broadcast": "Transmisja testowa"
+    },
+    "watch":{
+      "how_to_watch": "Jak oglądać z innego miejsca/apki ?",
+      "playlist_m3u": "Playlista m3u",
+      "use_link": "Użyj linku",
+      "also_download": "lub pobierz plik poniżej",
+      "download": "Pobierz"
     },
     "privacy_policy": {
       "about_us": {

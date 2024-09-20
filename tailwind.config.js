@@ -12,6 +12,7 @@ module.exports = {
         'vw-header': 'calc(100% - 30px)',
       },
       screens: {
+        'mobile': '740px',
         'bigger': '3000px',
       },
     },
