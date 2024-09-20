@@ -1,9 +1,15 @@
 "use client";
 
-import React from "react";
+import React, {use} from "react";
 import { NextUIProvider } from "@nextui-org/react";
+import getLangData from '@/components/client/getLangData';
 import Navbar from '@/components/Navbar';
 import AccordionBox from '@/components/AccordionBox';
+
+async function getCalendarText() {
+    const lang = await getLangData();
+    return lang.pages.tv_calendar;
+}
 
 const App = () => {
     const programsDemoBroadcast = [
@@ -27,15 +33,17 @@ const App = () => {
         { title: "19:15 - 23:00 | Program Name 6", description: "Description program" },
       ];
 
+    const calendarText = use(getCalendarText());
+
     return (
         <NextUIProvider>
             <div className="App">
                 <Navbar />
-                <h2 className="text-center font-bold text-3xl">Demo Broadcast</h2>
+                <h2 className="text-center font-bold text-3xl">{calendarText.demo_broadcast}</h2>
                 <AccordionBox programs={programsDemoBroadcast}/>
-                <h2 className="text-center font-bold text-3xl">Today</h2>
+                <h2 className="text-center font-bold text-3xl">{calendarText.today}</h2>
                 <AccordionBox programs={programsToday}/>
-                <h2 className="text-center font-bold text-3xl mt-5">Tomorrow</h2>
+                <h2 className="text-center font-bold text-3xl mt-5">{calendarText.tomorrow}</h2>
                 <AccordionBox programs={programsTomorrow}/>
             </div>
         </NextUIProvider>

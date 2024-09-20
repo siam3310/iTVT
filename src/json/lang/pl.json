@@ -6,7 +6,8 @@
     "contact": "Kontakt"
   },
   "pages": {
-    "404": "Wybrana strona nie istnieje. Wybierz dostępną opcję z Menu na górze strony",
+    "404": "Wybrana strona nie istnieje. Wybierz dostępną opcję z Menu po powrocie do strony początkowej",
+    "return_page": "Kliknij tutaj, aby powrócić do strony początkowej",
     "channel": "Wybierz ulubiony kanał",
     "player": {
       "watch_broadcast": "Oglądaj transmisje",
@@ -14,12 +15,13 @@
     },
     "tv_calendar": {
       "today": "Dzisiaj",
-      "tomorrow": "Jutro"
+      "tomorrow": "Jutro",
+      "demo_broadcast": "Transmisja testowa"
     },
     "privacy_policy": {
       "about_us": {
         "title": "Kim jesteśmy",
-        "content": "Nasza strona internetowa:"
+        "content": "Nasza strona internetowa to"
       },
       "media": {
         "title": "Media",

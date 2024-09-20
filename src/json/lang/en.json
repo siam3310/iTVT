@@ -6,7 +6,8 @@
     "contact": "Contact"
   },
   "pages": {
-    "404": "The selected page does not exist, select an available option from the menu at the top of the page",
+    "404": "The selected page does not exist. Select an available option from the Menu when you return to the start page",
+    "return_page": "Click here to return to the initial page",
     "channel": "Select Favourite Channel",
     "player": {
       "watch_broadcast": "Watch Broadcast",
@@ -14,7 +15,8 @@
     },
     "tv_calendar": {
       "today": "Today",
-      "tomorrow": "Tomorrow"
+      "tomorrow": "Tomorrow",
+      "demo_broadcast": "Demo Broadcast"
     },
     "privacy_policy": {
       "about_us": {

@@ -1,14 +1,22 @@
 "use client";
 
-import React, { useEffect, useRef } from 'react';
+import React, { use, useEffect, useRef } from 'react';
 import { NextUIProvider } from "@nextui-org/react";
+import getLangData from '@/components/client/getLangData';
 import FirstLoadPopup from '@/components/FirstLoadPopup';
 import Navbar from '@/components/Navbar';
 import VideoBox from '@/components/VideoBox';
 import Channels from '@/components/Channels';
 
+async function getPlayerText(){
+  const lang = await getLangData();
+  return lang.pages.player.watch_broadcast;
+}
+
 const Page = () => {
-  let appRef = useRef();
+  const appRef = useRef();
+  const playerText = use(getPlayerText());
+
   useEffect(() => {
     appRef.current.classList.remove("no-clickable", "stop-drag")
   }, []);
@@ -18,7 +26,7 @@ const Page = () => {
       <FirstLoadPopup />
       <div className="App no-clickable stop-drag" ref={appRef}>
         <Navbar />
-        <VideoBox name="iTVT - Watch Broadcast" src="https://video-itv.itvt.xyz/live/itvt/index.m3u8" />
+        <VideoBox name={`iTVT (${playerText})`} src="https://video-itv.itvt.xyz/live/itvt/index.m3u8" />
         <Channels />
       </div>
     </NextUIProvider>

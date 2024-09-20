@@ -1,21 +1,23 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { use, useEffect, useRef } from 'react';
 import {NextUIProvider} from "@nextui-org/react";
-import getLangKey from '@/components/server/getLangKey';
+import getLangData from '@/components/client/getLangData';
 import FirstLoadPopup from '@/components/FirstLoadPopup';
 import Navbar from '@/components/Navbar';
 import Channels from '@/components/Channels';
 
+async function getChannelsText(){
+  const lang = await getLangData();
+  return lang.pages.channel;
+}
+
 const Page = () => {
   const appRef = useRef();
-  const [selectTxt, setSelectTxt] = useState('...');
+  const channelsText = use(getChannelsText());
 
   useEffect(() => {
-    getLangKey("pages.channel").then((txt) => {
-      setSelectTxt(txt);
-      appRef.current.classList.remove("no-clickable", "stop-drag");
-    });
+    appRef.current.classList.remove("no-clickable", "stop-drag");
   }, []);
 
   return (
@@ -23,7 +25,7 @@ const Page = () => {
       <FirstLoadPopup />
       <div className="App no-clickable stop-drag" ref={appRef}>
         <Navbar />
-        <h1 className='font-bold text-2xl text-center my-7'>{selectTxt}</h1>
+        <h1 className='font-bold text-2xl text-center my-7'>{channelsText}</h1>
         <Channels/>
       </div>
     </NextUIProvider>

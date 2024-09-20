@@ -1,30 +1,17 @@
-"use client"
+"use client";
 
-import React, { useState, useEffect } from "react";
+import React, { use } from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Image} from "@nextui-org/react";
-import getLangKey from "./server/getLangKey.js";
+import getLangData from '@/components/client/getLangData';
 import {Logo} from "./Logo.jsx";
 
-export default function () {
-  const [tvCalendarTxt, setTvCalendarTxt] = useState('...');
-  const [channelsTxt, setChannelsTxt] = useState('...');
-  const [privacyPolicyTxt, setPrivacyPolicyTxt] = useState('...');
-  const [contactTxt, setContactTxt] = useState('...');
+async function getHeaderText() {
+  const lang = await getLangData();
+  return lang.navbar;
+}
 
-  useEffect(() => {
-    getLangKey("navbar.tv_calendar").then((txt) => {
-      setTvCalendarTxt(txt);
-    });
-    getLangKey("navbar.channels").then((txt) => {
-      setChannelsTxt(txt);
-    });
-    getLangKey("navbar.privacy_policy").then((txt) => {
-      setPrivacyPolicyTxt(txt);
-    });
-    getLangKey("navbar.contact").then((txt) => {
-      setContactTxt(txt);
-    });
-  }, []);
+function NavbarBlock () {
+  const headerText = use(getHeaderText());
 
   return (
     <Navbar className="m-4 bg-zinc-800 rounded-md w-vw-header">
@@ -64,25 +51,27 @@ export default function () {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="/calendar">
-            {tvCalendarTxt}
+            {headerText.tv_calendar}
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
           <Link color="foreground" href="/channel">
-            {channelsTxt}
+            {headerText.channels}
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="/privacy">
-            {privacyPolicyTxt}
+            {headerText.privacy_policy}
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="/contact" aria-current="page">
-            {contactTxt}
+            {headerText.contact}
           </Link>
         </NavbarItem>
       </NavbarContent>
     </Navbar>
   );
 }
+
+export default NavbarBlock;

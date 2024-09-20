@@ -2,7 +2,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 
 export async function POST(req) {
-  return new Response(JSON.stringify({ error: 'Failed to save IP address.' }), {
+  return new Response(JSON.stringify({ error: 'Method not allowed.' }), {
     status: 403,
     headers: { 'Content-Type': 'application/json' },
   });
