@@ -13,25 +13,16 @@ async function getCalendarText() {
 
 const App = () => {
     const programsDemoBroadcast = [
-        { title: "23:50 - 10:30 | Oliwier Stream - Live Urodzinowy", description: "Save from latest broadcast" },
-        { title: "10:30 - 19:00 | Oliwier Stream - Live Urodzinowy", description: "Save from latest broadcast" },
+        { title: "01:50 - 09:00 | Czas", description: "Jaka jest teraz godzina" },
+        { title: "10:00 - 19:30 | Przerwa techniczna", description: "Brak" },
     ];
     const programsToday = [
-        { title: "10:00 - 10:30 | Program Name 1", description: "Description program" },
-        { title: "10:30 - 12:00 | Program Name 2", description: "Description program" },
-        { title: "12:00 - 15:00 | Program Name 3", description: "Description program" },
-        { title: "15:00 - 18:30 | Program Name 4", description: "Description program" },
-        { title: "19:00 - 19:15 | Program Name 5", description: "Description program" },
-        { title: "19:15 - 23:00 | Program Name 6", description: "Description program" },
-      ];
-      const programsTomorrow = [
-        { title: "10:00 - 10:30 | Program Name 1", description: "Description program" },
-        { title: "10:30 - 12:00 | Program Name 2", description: "Description program" },
-        { title: "12:00 - 15:00 | Program Name 3", description: "Description program" },
-        { title: "15:00 - 18:30 | Program Name 4", description: "Description program" },
-        { title: "19:00 - 19:15 | Program Name 5", description: "Description program" },
-        { title: "19:15 - 23:00 | Program Name 6", description: "Description program" },
-      ];
+        { title: "19:30 - 20:00 | Krótkie wprowadzenie", description: "Jakie będą progamy" },
+        { title: "20:00 - 22:30 | Zagrajmy na luzie z Klubuntu", description: "Program rozwrywkowy" },
+    ];
+    const programsTomorrow = [
+        { title: "10:00 - 10:30 | Program Name", description: "Soon" },
+    ];
 
     const calendarText = use(getCalendarText());
 
