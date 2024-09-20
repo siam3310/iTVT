@@ -1,7 +1,7 @@
 import React from 'react';
 import { NextUIProvider } from "@nextui-org/react";
 import Link from 'next/link';
-import getLangData from '@/components/client/getLangData';
+import getLangData from '@/components/server/getLangData';
 // import Navbar from '@/components/Navbar';
 
 
