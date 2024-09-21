@@ -36,6 +36,19 @@ const App = () => {
                             <span className='text-white ml-[-6px] transition-colors'>{infoText.download}</span>
                         </Button>
                     </Link>
+                    <p className='mt-3'>{infoText.apps_recommended}</p>
+                    <p className='mt-5'><b>PC / {infoText.other_devices}</b></p>
+                    <ul className='text-center'>
+                        <li>VLC</li>
+                        <li>MPV</li>
+                        <li>Kodi</li>
+                    </ul>
+                    <p className='mt-4'><b>Android</b></p>
+                    <ul className='text-center'>
+                        <li>Televizo</li>
+                        <li>IPTV Pro - Alexander Sofronov</li>
+                        <li>IPTV - Alexander Sofronov</li>
+                    </ul>
                 </div>
 
             </div>

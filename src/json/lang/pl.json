@@ -24,7 +24,9 @@
       "playlist_m3u": "Playlista m3u",
       "use_link": "Użyj linku",
       "also_download": "lub pobierz plik poniżej",
-      "download": "Pobierz"
+      "download": "Pobierz",
+      "apps_recommended": "Polecane apki do oglądania playlisty",
+      "other_devices": "Other devices"
     },
     "privacy_policy": {
       "about_us": {
