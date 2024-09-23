@@ -22,8 +22,8 @@ const App = () => {
                 <Navbar />
                 <h2 className="text-center font-bold text-3xl mt-2">{calendarText.demo_broadcast}</h2>
                 <AccordionBox programs={Programs.programsDemoBroadcast}/>
-                <h2 className="text-center font-bold text-3xl mt-5">{calendarText.today}</h2>
-                <AccordionBox programs={Programs.programsToday + " (23.09.2024)"}/>
+                <h2 className="text-center font-bold text-3xl mt-5">{calendarText.today + " (23.09.2024)"}</h2>
+                <AccordionBox programs={Programs.programsToday}/>
                 <h2 className="text-center font-bold text-3xl mt-5">{calendarText.tomorrow}</h2>
                 <AccordionBox programs={Programs.programsTomorrow}/>
             </div>
