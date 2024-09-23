@@ -4,7 +4,7 @@ import React, {use} from "react";
 import { NextUIProvider } from "@nextui-org/react";
 import getLangData from '@/components/client/getLangData';
 import AccordionBox from '@/components/AccordionBox';
-import Programs from './@components/client/Programs';
+import Programs from '@components/client/Programs';
 
 async function getCalendarText() {
     const lang = await getLangData();
