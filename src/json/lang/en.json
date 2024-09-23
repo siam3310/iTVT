@@ -21,12 +21,19 @@
     },
     "watch":{
       "how_to_watch": "How to watch from another location/app",
+      "mobile_app": "Mobile App",
       "playlist_m3u": "Playlist m3u",
-      "use_link": "Use link",
-      "also_download": "also download file below",
-      "download": "Download",
-      "apps_recommended": "Recommended Apps to watch from playlist",
-      "other_devices": "Pozostałe urządzenia"
+      "mobile": {
+        "try_app": "Try the app (Only for Android)",
+        "download": "Download now"
+      },
+      "playlist": {
+        "use_link": "Use link",
+        "also_download": "also download file below",
+        "download": "Download",
+        "apps_recommended": "Recommended Apps to watch from playlist",
+        "other_devices": "Pozostałe urządzenia"
+      }
     },
     "privacy_policy": {
       "about_us": {
