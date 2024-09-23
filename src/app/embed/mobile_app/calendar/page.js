@@ -17,7 +17,7 @@ const App = () => {
     return (
         <NextUIProvider>
             <div className="App">
-                <h2 className="text-center font-bold text-3xl mt-2">{calendarText.demo_broadcast}</h2>
+                <h2 className="text-center font-bold text-3xl mt-4">{calendarText.demo_broadcast}</h2>
                 <AccordionBox programs={Programs.programsDemoBroadcast}/>
                 <h2 className="text-center font-bold text-3xl mt-5">{calendarText.today}</h2>
                 <AccordionBox programs={Programs.programsToday}/>
