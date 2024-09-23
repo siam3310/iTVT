@@ -1,11 +1,11 @@
 class Programs {
   static programsDemoBroadcast = [
-    { title: "00:00 - 18:00 | Przerwa techniczna", description: "Brak" },
+    { title: "00:00 - 21:00 | Przerwa techniczna", description: "Brak" },
   ];
 
   static programsToday = [
-    { title: "18:00 - 18:30 | Krótkie wprowadzenie", description: "Jakie będą programy | Plan Dnia" },
-    { title: "18:30 - 20:30 | Zagrajmy na luzie z Klubuntu", description: "Program rozwrywkowy" },
+    { title: "21:00 - 21:10 | Krótkie wprowadzenie", description: "Jakie będą programy | Plan Dnia" },
+    { title: "21:10 - 23:00 | Zagrajmy na luzie z Klubuntu", description: "Jedziemy w nieznane | Program rozrywkowy" },
   ];
 
   static programsTomorrow = [
