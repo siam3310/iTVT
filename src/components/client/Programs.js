@@ -4,8 +4,8 @@ class Programs {
   ];
 
   static programsToday = [
-    { title: "20:10 - 20:15 | Krótkie wprowadzenie", description: "Jakie będą programy | Plan Dnia" },
-    { title: "20:15 - 22:30 | Zagrajmy na luzie z Klubuntu", description: "Jedziemy w nieznane | Program rozrywkowy" },
+    { title: "20:55 - 21:00 | Słowem Wstępu", description: "Jakie będą programy | Plan Dnia" },
+    { title: "21:00 - 23:00 | Zagrajmy na luzie z Klubuntu", description: "W drogę po plakaty | Program rozrywkowy" },
   ];
 
   static programsTomorrow = [
