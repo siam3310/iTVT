@@ -4,7 +4,7 @@ class Programs {
   ];
 
   static programsToday = [
-    { title: "18:05 - 20:15 | Oliwier Stream - IRL (Dzień 3) ", description: "Zobacz jak wygląda moje życie - czy coś byś zmienił ?" },
+    { title: "18:05 - 20:15 | Oliwier Stream - IRL (Dzień 4) ", description: "Zobacz jak wygląda moje życie - nie wiem co dzisiaj robić ?" },
   ];
 
   static programsTomorrow = [
