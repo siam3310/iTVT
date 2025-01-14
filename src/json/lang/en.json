@@ -38,11 +38,11 @@
     "privacy_policy": {
       "about_us": {
         "title": "About Us",
-        "content": "Our website is"
+        "content": "We are a streaming service that offers real-time access to channels from iTVT Group. You can access our application through the website: https://hub.itvt.xyz. You can also use the iTVT app on mobile devices, which you can find in the download section"
       },
       "media": {
         "title": "Media",
-        "content": "When playing a video, additional data may be downloaded to your computer and sent to other servers"
+        "content": "When playing a video, additional data may be downloaded to your device and sent to other servers"
       },
       "cookies": {
         "title": "Cookies",
