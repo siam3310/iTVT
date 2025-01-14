@@ -3,7 +3,6 @@
 import React, { use, useEffect, useRef } from 'react';
 import { NextUIProvider } from "@nextui-org/react";
 import getLangData from '@/components/client/getLangData';
-import FirstLoadPopup from '@/components/FirstLoadPopup';
 import ContactBox from "@/components/ContactBox";
 
 async function getContactText(){
@@ -21,7 +20,6 @@ const App = () => {
 
     return (
         <NextUIProvider>
-            <FirstLoadPopup />
             <div className="App no-clickable stop-drag" ref={appRef}>
                 <h2 className="text-center font-bold text-3xl mt-8">{contactText.contact_us}</h2>
                 <div className="flex flex-col justify-center items-center" id="Contact">
