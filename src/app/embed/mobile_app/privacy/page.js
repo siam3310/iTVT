@@ -3,7 +3,6 @@
 import React, { use, useEffect, useRef } from 'react';
 import { NextUIProvider } from "@nextui-org/react";
 import getLangData from '@/components/client/getLangData';
-import FirstLoadPopup from '@/components/FirstLoadPopup';;
 
 async function getPrivacyText(){
     const lang = await getLangData();
@@ -20,7 +19,6 @@ const Page = () => {
 
     return (
         <NextUIProvider>
-            <FirstLoadPopup />
             <div className="App no-clickable stop-drag" ref={appRef}>
                 <div className="text-center max-w-[1000px] mx-5 sm:mx-4 lg:mx-auto">
                     <h2 className="font-bold text-2xl text-center my-7">{privacyText.about_us.title}</h2>
