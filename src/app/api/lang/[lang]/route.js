@@ -5,7 +5,8 @@ export async function POST(req) {
     return new Response('Method not allowed', { status: 501 });
 }
 
-export async function GET(req, { params }) {
+export async function GET(req, props) {
+    const params = await props.params;
     const paramLang = params.lang;
     const packageDir = process.cwd();
     const jsonLang = `${packageDir}/src/json/lang/${paramLang}.json`;

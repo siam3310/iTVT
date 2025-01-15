@@ -26,7 +26,7 @@ const Page = () => {
                 <Navbar />
                 <div className="text-center max-w-[1000px] mx-5 sm:mx-4 lg:mx-auto">
                     <h2 className="font-bold text-2xl text-center my-7">{privacyText.about_us.title}</h2>
-                    <p>{privacyText.about_us.content}: https://hub.itvt.xyz</p>
+                    <p>{privacyText.about_us.content}: <a href="https://hub.itvt.xyz/watch">https://hub.itvt.xyz/watch</a></p>
                     <h2 className="font-bold text-2xl text-center my-7">{privacyText.media.title}</h2>
                     <p>{privacyText.media.content}</p>
                     <h2 className="font-bold text-2xl text-center my-7">{privacyText.cookies.title}</h2>

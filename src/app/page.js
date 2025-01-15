@@ -1,14 +1,17 @@
-"use client";
+'use client';
 
-import React, { use, useEffect, useRef } from 'react';
+import React, { use, useRef, Suspense, useEffect } from 'react';
 import { NextUIProvider } from "@nextui-org/react";
-import getLangData from '@/components/client/getLangData';
 import FirstLoadPopup from '@/components/FirstLoadPopup';
 import Navbar from '@/components/Navbar';
 import VideoBox from '@/components/VideoBox';
 import Channels from '@/components/Channels';
 
-async function getPlayerText(){
+// Assuming getLangData is available for fetching the language data
+import getLangData from '@/components/client/getLangData';
+
+// Function to fetch player text
+async function getPlayerText() {
   const lang = await getLangData();
   return lang.pages.player.watch_broadcast;
 }
