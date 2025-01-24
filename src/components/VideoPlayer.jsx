@@ -74,7 +74,7 @@ const VideoPlayer = () => {
         <>
           <MediaController id="mc" className="max-md:w-full max-lg:w-[80vw] w-[51.5vw]">
             <hls-video
-              src="https://video-itv.itvt.xyz/live/itvt/index.m3u8"
+              src="https://siamstv.vercel.app/tv/ch/tsportsd.m3u8"
               slot="media"
               crossOrigin={true}
               StreamType="live"
